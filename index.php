@@ -167,9 +167,6 @@ foreach($csvarray as $k=>$row){
 <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAijZqBZcz-rowoXZC1tt9iRT5rHVQFKUGOHoyfP_4KyrflbHKcRTt9kQJVST5oKMRj8vKTQS2b7oNjQ" type="text/javascript"></script>
 <script src="http://mapstraction.com/mapstraction-js/mapstraction.js"></script>
 <script src="geocode.js"></script>
-<script  src="http://yui.yahooapis.com/2.8.2r1/build/yahoo-dom-event/yahoo-dom-event.js"></script>
-
-<script type="text/javascript" src="http://yui.yahooapis.com/2.8.2r1/build/calendar/calendar-min.js"></script>
 <script>
 var mapstraction;
 var geocoder;
@@ -189,13 +186,6 @@ function initialize() {
     var o = rows[i].innerHTML;
     geocoder.geocode({address:loc.innerHTML},o);
   }
-  // YAHOO.example.cal1 = new YAHOO.widget.Calendar(
-  //   "cal1","cal1Container", { selected:'3/12/11'} 
-  // );
-  // for(var i=0;i<dates.length;i++){
-  //   YAHOO.example.cal1.select(dates[i]);
-  // }
-  // YAHOO.example.cal1.render();
 }
 
 function geocode_return(geocoded_location,o) {
